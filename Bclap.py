@@ -125,3 +125,5 @@ for cancel in cancelTabs:
 
      time.sleep(5)
      driver.find_element_by_xpath('//*[@id="content"]/div[1]/div/div[1]/div[1]/div[1]/div[1]/div[2]/div/a[3]').click()
+
+     trsr
