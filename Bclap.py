@@ -112,3 +112,16 @@ driver.find_element_by_xpath('//*[@id="enhance-stay"]/div[2]/div[1]/div[1]/form/
 
 time.sleep(4)
 driver.find_element_by_xpath('//*[@id="enhance-stay"]/div[2]/div[1]/div[1]/form/div[6]/a').click()
+
+time.sleep(3)
+driver.find_element_by_xpath('//*[@id="body"]/div[3]/section[2]/div[1]/a').click()
+
+
+cancelTabs = driver.window_handles
+for cancel in cancelTabs:
+    driver.switch_to.window(cancel)
+    print(driver.current_url)
+    if(driver.current_url=="http://test.bookingclap.com/en/order/managebooking?Key=IosV4zsPnZ2kNytWZh_etPkYeEpMN937nyD3QTlkzluBVYn2zk0H9Sbz7mmffGfut4KJPG32ovoEg4CxORjdGlYSj3NYD-m2D80uC4iRud6HbmAEnYkZR7Coa8aAeIl0"):
+
+     time.sleep(5)
+     driver.find_element_by_xpath('//*[@id="content"]/div[1]/div/div[1]/div[1]/div[1]/div[1]/div[2]/div/a[3]').click()
